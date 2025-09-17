@@ -1,0 +1,158 @@
+/* === Reset cơ bản === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Body & Container === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* === Header === */
+h1, h2, h3 {
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* === Table style === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+thead {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #e6e4ff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* === Form style === */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 6px rgba(108,99,255,0.3);
+}
+
+/* === Buttons === */
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.btn-add {
+    background-color: #6c63ff;
+}
+
+.btn-add:hover {
+    background-color: #574fd6;
+}
+
+.btn-edit {
+    background-color: #ffa500;
+}
+
+.btn-edit:hover {
+    background-color: #e59400;
+}
+
+.btn-delete {
+    background-color: #ff4c4c;
+}
+
+.btn-delete:hover {
+    background-color: #e03e3e;
+}
+
+/* === Card style (optional cho dashboard) === */
+.card {
+    background-color: #f7f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    table, form {
+        font-size: 13px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
